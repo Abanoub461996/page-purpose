@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { Instagram, Linkedin } from 'lucide-react';
 import styles from './Footer.module.css';
 
+const logoMark = `${import.meta.env.BASE_URL}images/logo-mark.png`;
+
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -9,7 +11,7 @@ export const Footer = () => {
         <div className={styles.top}>
           <div className={styles.brand}>
             <div className={styles.brandHeader}>
-              <img src="/images/logo-mark.png" alt="Paige and Purpose logo" className={styles.brandLogo} />
+              <img src={logoMark} alt="Paige and Purpose logo" className={styles.brandLogo} />
               <div className={styles.brandName}>
                 Paige <span className={styles.brandAmpersand}>&</span> Purpose
               </div>
