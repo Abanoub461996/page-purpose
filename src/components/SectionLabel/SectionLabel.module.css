@@ -1,0 +1,10 @@
+.label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: hsl(var(--primary));
+  margin-bottom: 24px;
+  display: block;
+}

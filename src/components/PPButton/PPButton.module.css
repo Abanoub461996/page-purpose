@@ -1,0 +1,52 @@
+.root {
+  padding: 14px 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 250ms var(--easing);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid hsl(var(--foreground));
+  text-decoration: none;
+  line-height: 1;
+}
+
+.primary {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+
+.primary:hover {
+  background: transparent;
+  color: hsl(var(--foreground));
+}
+
+.secondary {
+  background: transparent;
+  color: hsl(var(--foreground));
+}
+
+.secondary:hover {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+
+.subtle {
+  border-color: hsla(var(--border-color), 0.15);
+  background: transparent;
+  color: hsl(var(--foreground-muted));
+}
+
+.subtle:hover {
+  border-color: hsl(var(--foreground));
+  color: hsl(var(--foreground));
+}
+
+.large {
+  padding: 18px 48px;
+  font-size: 0.8rem;
+}

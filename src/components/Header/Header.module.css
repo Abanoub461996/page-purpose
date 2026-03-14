@@ -1,0 +1,131 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all var(--duration-medium) var(--easing);
+  padding: 24px 0;
+}
+
+.scrolled {
+  background: hsla(var(--background), 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 16px 0;
+  box-shadow: 0 1px 0 hsla(var(--border-color), var(--border-opacity));
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logoMark {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.logoAmpersand {
+  color: hsl(var(--primary));
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navLink {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: hsl(var(--foreground-muted));
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--easing);
+  position: relative;
+}
+
+.navLink:hover {
+  color: hsl(var(--foreground));
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: hsl(var(--foreground));
+  transition: all var(--duration-medium) var(--easing);
+  transform: translateX(-50%);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.navLinkActive {
+  color: hsl(var(--foreground));
+}
+
+.navLinkActive::after {
+  width: 100%;
+}
+
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: hsl(var(--foreground));
+}
+
+.mobileMenu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logoWordmark {
+    font-size: 1.05rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px var(--gutter);
+    background: hsl(var(--background));
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid hsla(var(--border-color), var(--border-opacity));
+  }
+
+  .mobileMenuHidden {
+    display: none;
+  }
+}

@@ -1,0 +1,352 @@
+.page {
+  padding-top: 120px;
+}
+
+.hero {
+  padding: 80px 0 var(--section-spacing);
+  text-align: center;
+}
+
+.heroInner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 3.8vw, 3.2rem);
+  margin-bottom: 20px;
+}
+
+.heroSub {
+  color: hsl(var(--foreground-muted));
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.valueSection {
+  padding: 0 0 72px;
+}
+
+.valueInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.valueCard {
+  border: 1px solid hsla(var(--border-color), var(--border-opacity));
+  background: hsl(var(--background));
+  padding: 32px 28px;
+  height: 100%;
+}
+
+.valueTitle {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.valueDesc {
+  font-size: 0.9rem;
+  color: hsl(var(--foreground-muted));
+  line-height: 1.7;
+}
+
+.serviceSection {
+  padding: 0 0 var(--section-spacing);
+}
+
+.serviceInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.serviceSectionHeader {
+  max-width: 720px;
+  margin-bottom: 12px;
+}
+
+.serviceSectionTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.serviceCard {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  border: 1px solid hsla(var(--border-color), var(--border-opacity));
+  background: hsl(var(--background));
+}
+
+.serviceNumber {
+  font-family: var(--font-display);
+  font-size: 2.7rem;
+  font-weight: 300;
+  color: hsl(var(--primary));
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 40px;
+  border-right: 1px solid hsla(var(--border-color), var(--border-opacity));
+}
+
+.serviceContent {
+  padding: 40px 36px;
+}
+
+.serviceHeader {
+  margin-bottom: 16px;
+}
+
+.serviceTitle {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.serviceDesc {
+  color: hsl(var(--foreground-muted));
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.serviceDivider {
+  height: 1px;
+  background: hsla(var(--border-color), var(--border-opacity));
+  margin-bottom: 20px;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 220px;
+  gap: 28px;
+  align-items: start;
+}
+
+.serviceBlock {
+  min-width: 0;
+}
+
+.blockLabel {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: hsl(var(--foreground-muted));
+  margin-bottom: 10px;
+}
+
+.blockText {
+  font-size: 0.88rem;
+  color: hsl(var(--foreground-muted));
+  line-height: 1.7;
+}
+
+.serviceList {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.serviceListItem {
+  font-size: 0.85rem;
+  color: hsl(var(--foreground-muted));
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.serviceListItem::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: hsl(var(--primary));
+}
+
+.serviceOutcome {
+  border-left: 1px solid hsla(var(--border-color), var(--border-opacity));
+  padding-left: 20px;
+}
+
+.outcomeLabel {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  color: hsl(var(--foreground-muted));
+  margin-bottom: 8px;
+}
+
+.outcomeValue {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: hsl(var(--primary));
+  margin-bottom: 8px;
+}
+
+.timeline {
+  font-size: 0.78rem;
+  color: hsl(var(--foreground-muted));
+}
+
+.process {
+  padding: var(--section-spacing) 0;
+  background: hsla(var(--border-color), 0.02);
+}
+
+.processInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+
+.processTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  margin-bottom: 14px;
+}
+
+.processSub {
+  max-width: 640px;
+  margin: 0 auto 56px;
+  color: hsl(var(--foreground-muted));
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.processSteps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.processSteps > * {
+  height: 100%;
+}
+
+.processStep {
+  background: hsl(var(--background));
+  border: 1px solid hsla(var(--border-color), var(--border-opacity));
+  padding: 36px 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.processStepNum {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  color: hsl(var(--primary));
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.processStepLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: hsl(var(--foreground));
+}
+
+.processStepLine {
+  width: 32px;
+  height: 1px;
+  background: hsl(var(--primary));
+  margin: 0 auto 12px;
+}
+
+.processStepDesc {
+  font-size: 0.8rem;
+  color: hsl(var(--foreground-muted));
+  line-height: 1.6;
+}
+
+.cta {
+  padding: var(--section-spacing) 0;
+  text-align: center;
+}
+
+.ctaInner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.ctaTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1100px) {
+  .serviceGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .serviceOutcome {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 1px solid hsla(var(--border-color), var(--border-opacity));
+    padding-left: 0;
+    padding-top: 14px;
+  }
+}
+
+@media (max-width: 968px) {
+  .valueInner {
+    grid-template-columns: 1fr;
+  }
+
+  .serviceCard {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .serviceNumber {
+    font-size: 2.3rem;
+  }
+
+  .serviceContent {
+    padding: 32px 26px;
+  }
+
+  .processSteps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .serviceCard {
+    grid-template-columns: 1fr;
+  }
+
+  .serviceNumber {
+    padding: 20px;
+    border-right: none;
+    border-bottom: 1px solid hsla(var(--border-color), var(--border-opacity));
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .serviceContent {
+    padding: 28px 20px;
+  }
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .processSteps {
+    grid-template-columns: 1fr;
+  }
+}
