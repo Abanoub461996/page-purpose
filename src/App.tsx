@@ -19,7 +19,7 @@ const ScrollToTop = () => {
 };
 
 export const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <ScrollToTop />
     <Header />
     <Routes>
