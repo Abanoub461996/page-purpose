@@ -4,6 +4,8 @@ import { SectionLabel } from '../../components/SectionLabel/SectionLabel';
 import { PPButton } from '../../components/PPButton/PPButton';
 import { RevealImage } from '../../components/RevealImage/RevealImage';
 
+const founderImage = `${import.meta.env.BASE_URL}images/founder.jpg`;
+
 const values = [
   { title: 'Structure Over Speed', desc: 'We believe every hire should be backed by a defined role, clear expectations, and measurable outcomes.' },
   { title: 'People First', desc: 'Culture isn\'t a perk — it\'s infrastructure. We help founders build environments where teams thrive.' },
@@ -31,7 +33,7 @@ export const About = () => {
           </AnimatedSection>
           <AnimatedSection delay={200}>
             <RevealImage
-              src="/images/founder.jpg"
+              src={founderImage}
               alt="Lainey Marindo"
               className={styles.heroImage}
             />

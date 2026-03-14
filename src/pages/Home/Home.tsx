@@ -4,12 +4,14 @@ import { SectionLabel } from '../../components/SectionLabel/SectionLabel';
 import { PPButton } from '../../components/PPButton/PPButton';
 import { RevealImage } from '../../components/RevealImage/RevealImage';
 
+const imagesBaseUrl = `${import.meta.env.BASE_URL}images/`;
+
 const frameworkSteps = [
-  { text: 'Identify the real business gap', icon: '/images/service-audit.png' },
-  { text: 'Define role scope and accountability', icon: '/images/service-hiring.png' },
-  { text: 'Align seniority and compensation', icon: '/images/service-stability.png' },
-  { text: 'Conduct structured evaluation', icon: '/images/service-audit.png' },
-  { text: 'Ensure performance alignment', icon: '/images/service-hiring.png' },
+  { text: 'Identify the real business gap', icon: `${imagesBaseUrl}service-audit.png` },
+  { text: 'Define role scope and accountability', icon: `${imagesBaseUrl}service-hiring.png` },
+  { text: 'Align seniority and compensation', icon: `${imagesBaseUrl}service-stability.png` },
+  { text: 'Conduct structured evaluation', icon: `${imagesBaseUrl}service-audit.png` },
+  { text: 'Ensure performance alignment', icon: `${imagesBaseUrl}service-hiring.png` },
 ];
 
 const services = [
@@ -91,9 +93,9 @@ export const Home = () => {
           <AnimatedSection direction="fade">
             <div className={styles.trustedLabel}>Trusted by</div>
             <div className={styles.trustedLogos}>
-              <img src="/images/logo-bukhash.png" alt="Bukhash Brothers" className={styles.trustedLogo} />
-              <img src="/images/logo-chalk.png" alt="Chalk" className={styles.trustedLogo} />
-              <img src="/images/logo-abtalks.png" alt="AB Talks" className={styles.trustedLogo} />
+              <img src={`${imagesBaseUrl}logo-bukhash.png`} alt="Bukhash Brothers" className={styles.trustedLogo} />
+              <img src={`${imagesBaseUrl}logo-chalk.png`} alt="Chalk" className={styles.trustedLogo} />
+              <img src={`${imagesBaseUrl}logo-abtalks.png`} alt="AB Talks" className={styles.trustedLogo} />
             </div>
           </AnimatedSection>
         </div>
@@ -168,7 +170,7 @@ export const Home = () => {
         <div className={styles.aboutInner}>
           <AnimatedSection direction="left">
             <RevealImage
-              src="/images/founder.jpg"
+              src={`${imagesBaseUrl}founder.jpg`}
               alt="Lainey Marindo, Founder"
               className={styles.aboutImage}
             />

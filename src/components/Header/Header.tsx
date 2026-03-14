@@ -10,6 +10,8 @@ const navItems = [
   { label: 'About', path: '/about' },
 ];
 
+const logoMark = `${import.meta.env.BASE_URL}images/logo-mark.png`;
+
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -29,7 +31,7 @@ export const Header = () => {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
         <Link to="/" className={styles.logo}>
-          <img src="/images/logo-mark.png" alt="Paige and Purpose logo" className={styles.logoMark} />
+          <img src={logoMark} alt="Paige and Purpose logo" className={styles.logoMark} />
         </Link>
 
         <nav className={styles.nav}>
